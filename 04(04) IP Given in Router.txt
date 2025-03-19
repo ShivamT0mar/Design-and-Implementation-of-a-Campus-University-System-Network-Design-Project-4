@@ -1,0 +1,34 @@
+cloud(config)#int g0/0
+cloud(config-if)#ip address 20.0.0.1 255.255.255.252
+cloud(config-if)#no shut
+cloud(config-if)#exit
+
+
+
+Cloud(config)#int s0/2/0
+Cloud(config-if)#ip address 10.10.10.5 255.255.255.252
+Cloud(config-if)#no shut
+
+
+
+Main-Campus_Router(config)#int s0/2/0
+Main-Campus_Router(config-if)#ip address 10.10.10.6 255.255.255.252
+Main-Campus_Router(config-if)#clock rate 64000
+Main-Campus_Router(config-if)#no shut
+Main-Campus_Router(config-if)#exit
+
+
+
+Main-Campus_Router(config)#int s0/2/1
+Main-Campus_Router(config-if)#ip address 10.10.10.1 255.255.255.252
+Main-Campus_Router(config-if)#clock rate 64000
+Main-Campus_Router(config-if)#no shut
+
+
+Branch_Router(config)#int s0/2/1
+Branch_Router(config-if)#ip address 10.10.10.2 255.255.255.252
+Branch_Router(config-if)#no shut
+Branch_Router(config-if)#exit
+
+
+

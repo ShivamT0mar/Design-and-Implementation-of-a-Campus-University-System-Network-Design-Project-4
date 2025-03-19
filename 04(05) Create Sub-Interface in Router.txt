@@ -1,0 +1,75 @@
+Branch_Router(config)#int g0/0
+Branch_Router(config-if)#no shut
+
+Main-Campus_Router(config)#int g0/0
+Main-Campus_Router(config)#no shut
+
+
+
+Main-Campus_Router(config)#int g0/0.10
+Main-Campus_Router(config-subif)#encapsulation dot1Q 10
+Main-Campus_Router(config-subif)#ip address 192.168.1.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.20
+Main-Campus_Router(config-subif)#encapsulation dot1Q 20
+Main-Campus_Router(config-subif)#ip address 192.168.2.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.30
+Main-Campus_Router(config-subif)#encapsulation dot1Q 30
+Main-Campus_Router(config-subif)#ip address 192.168.3.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.40
+Main-Campus_Router(config-subif)#encapsulation dot1Q 40
+Main-Campus_Router(config-subif)#ip address 192.168.4.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.50
+Main-Campus_Router(config-subif)#encapsulation dot1Q 50
+Main-Campus_Router(config-subif)#ip address 192.168.5.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.60
+Main-Campus_Router(config-subif)#encapsulation dot1Q 60
+Main-Campus_Router(config-subif)#ip address 192.168.6.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.70
+Main-Campus_Router(config-subif)#encapsulation dot1Q 70
+Main-Campus_Router(config-subif)#ip address 192.168.7.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Main-Campus_Router(config)#int g0/0.80
+Main-Campus_Router(config-subif)#encapsulation dot1Q 80
+Main-Campus_Router(config-subif)#ip address 192.168.8.1 255.255.255.0
+Main-Campus_Router(config-subif)#exit
+
+
+
+Router(config)#int g0/0.90
+Router(config-subif)#encapsulation dot1Q 90
+Router(config-subif)#ip address 192.168.9.1 255.255.255.0
+Router(config-subif)#exit
+
+
+
+Router(config)#int g0/0.100
+Router(config-subif)#encapsulation dot1Q 100
+Router(config-subif)#ip address 192.168.10.1 255.255.255.0
+Router(config-subif)#exit

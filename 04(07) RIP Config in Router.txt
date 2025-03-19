@@ -1,0 +1,33 @@
+Cloud(config)#router rip
+Cloud(config-router)#version 2
+Cloud(config-router)#network 20.0.0.0
+Cloud(config-router)#network 10.10.10.4
+Cloud(config-router)#exit
+Cloud(config)#do wr
+
+
+
+Main-Campus_Router(config)#router rip
+Main-Campus_Router(config-router)#version 2
+Main-Campus_Router(config-router)#network 10.10.10.4
+Main-Campus_Router(config-router)#network 10.10.10.0
+Main-Campus_Router(config-router)#network 192.168.1.0
+Main-Campus_Router(config-router)#network 192.168.2.0
+Main-Campus_Router(config-router)#network 192.168.3.0
+Main-Campus_Router(config-router)#network 192.168.4.0
+Main-Campus_Router(config-router)#network 192.168.5.0
+Main-Campus_Router(config-router)#network 192.168.6.0
+Main-Campus_Router(config-router)#network 192.168.7.0
+Main-Campus_Router(config-router)#network 192.168.8.0
+Main-Campus_Router(config-router)#exit
+Main-Campus_Router(config)#do wr
+
+
+
+Brach-Router(config)#router rip
+Brach-Router(config-router)#version 2
+Brach-Router(config-router)#network 10.10.10.0
+Brach-Router(config-router)#network 192.168.9.0
+Brach-Router(config-router)#network 192.168.10.0
+Brach-Router(config-router)#exit
+Brach-Router(config)#do wr

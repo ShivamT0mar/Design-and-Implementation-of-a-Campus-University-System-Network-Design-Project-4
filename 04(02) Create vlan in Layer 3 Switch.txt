@@ -1,0 +1,58 @@
+
+Main-Campus_R1(config)#vlan 10
+Main-Campus_R1(config)#int f0/2
+Main-Campus_R1(config-if)#switchport access vlan 10
+
+
+
+Main-Campus_R1(config)#vlan 20
+Main-Campus_R1(config)#int f0/3
+Main-Campus_R1(config-if)#switchport access vlan 20
+
+
+
+Main-Campus_R1(config)#vlan 30
+Main-Campus_R1(config)#int f0/4
+Main-Campus_R1(config-if)#switchport access vlan 30
+
+
+
+Main-Campus_R1(config)#vlan 40
+Main-Campus_R1(config)#int f0/5
+Main-Campus_R1(config-if)#switchport access vlan 40
+
+
+
+Main-Campus_R1(config)#vlan 50
+Main-Campus_R1(config)#int f0/6
+Main-Campus_R1(config-if)#switchport access vlan 50
+
+
+
+Main-Campus_R1(config)#vlan 60
+Main-Campus_R1(config)#int f0/7
+Main-Campus_R1(config-if)#switchport access vlan 60
+
+
+
+Main-Campus_R1(config)#vlan 70
+Main-Campus_R1(config)#int f0/8
+Main-Campus_R1(config-if)#switchport access vlan 70
+
+
+
+Main-Campus_R1(config)#vlan 80
+Main-Campus_R1(config)#int f0/9
+Main-Campus_R1(config-if)#switchport access vlan 80
+
+
+
+Branch-L3-Switch(config)#vlan 90
+Branch-L3-Switch(config)#int f0/2
+Branch-L3-Switch(config-if)#switchport access vlan 90
+
+
+
+Branch-L3-Switch(config)#vlan 100
+Branch-L3-Switch(config)#int f0/3
+Branch-L3-Switch(config-if)#switchport access vlan 100

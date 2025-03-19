@@ -1,0 +1,67 @@
+Switch(config)#vlan 10
+Switch(config-vlan)#name Admin
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 10
+
+
+
+Switch(config)#vlan 20
+Switch(config-vlan)#name HR
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 20
+
+
+
+Switch(config)#vlan 30
+Switch(config-vlan)#name Finance
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 30
+
+
+
+Switch(config)#vlan 40
+Switch(config-vlan)#name Business
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 40
+
+
+
+Switch(config)#vlan 50
+Switch(config-vlan)#name Engineering_Computing
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 50
+
+
+
+Switch(config)#vlan 60
+Switch(config-vlan)#name Art&Design
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 60
+
+
+
+Switch(config)#vlan 70
+Switch(config-vlan)#name StudentsLabs
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 70
+
+
+
+Switch(config)#vlan 80
+Switch(config-vlan)#name IT_Department
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 80
+
+
+
+Switch(config)#vlan 90
+Switch(config-vlan)#name Staff
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 90
+
+
+
+Switch(config)#vlan 100
+Switch(config-vlan)#name Student_Labs
+Switch(config-vlan)#int range f0/1-24
+Switch(config-if-range)#switchport access vlan 100

@@ -1,0 +1,9 @@
+Main-Campus_R1(config)#int f0/1
+Main-Campus_R1(config-if)#switchport trunk encapsulation dot1Q
+Main-Campus_R1(config-if)#switchport mode trunk
+
+
+
+Branch-L3-Switch(config)#int f0/1
+Branch-L3-Switch(config-if)#switchport trunk encapsulation dot1Q
+Branch-L3-Switch(config-if)#switchport mode trunk

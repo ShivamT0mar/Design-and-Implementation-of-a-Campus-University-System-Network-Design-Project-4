@@ -1,0 +1,67 @@
+Main-Campus_Router(config)#ip dhcp pool Admin-pool
+Main-Campus_Router(dhcp-config)#network 192.168.1.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.1.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool HR-pool
+Main-Campus_Router(dhcp-config)#network 192.168.2.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.2.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool Finance-pool
+Main-Campus_Router(dhcp-config)#network 192.168.3.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.3.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool Business-pool
+Main-Campus_Router(dhcp-config)#network 192.168.4.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.4.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool Engineer&Computing-pool
+Main-Campus_Router(dhcp-config)#network 192.168.5.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.5.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool Art&Design-pool
+Main-Campus_Router(dhcp-config)#network 192.168.6.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.6.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool Students-Labs-pool
+Main-Campus_Router(dhcp-config)#network 192.168.7.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.7.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Main-Campus_Router(config)#ip dhcp pool IT_Department-pool
+Main-Campus_Router(dhcp-config)#network 192.168.8.0 255.255.255.0
+Main-Campus_Router(dhcp-config)#default-router 192.168.8.1
+Main-Campus_Router(dhcp-config)#exit
+
+
+
+Brach-Router(config)#ip dhcp pool Staff-pool
+Brach-Router(dhcp-config)#network 192.168.9.0 255.255.255.0
+Brach-Router(dhcp-config)#default-router 192.168.9.1
+Brach-Router(dhcp-config)#exit
+
+
+
+Brach-Router(config)#ip dhcp pool Student-Lab-pool
+Brach-Router(dhcp-config)#network 192.168.10.0 255.255.255.0
+Brach-Router(dhcp-config)#default-router 192.168.10.1
+Brach-Router(dhcp-config)#exit
